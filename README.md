@@ -1,121 +1,134 @@
- **Feature Additions**
-1. **Add step counting logic**
+
+# **Techlerry Project**
+
+Techlerry is a health monitoring and emergency alert system designed to track steps, heart rate, and trigger SOS alerts in case of emergencies. This repository contains the frontend code for the Techlerry app, built with React Native and Expo.
+
+---
+
+## **Features**
+- **Step Counting:** Track daily steps using accelerometer data.
+- **Heart Rate Monitoring:** Monitor heart rate and detect anomalies.
+- **SOS Alerts:** Trigger emergency alerts manually or automatically based on abnormal heart rate or motion patterns.
+- **Activity History:** View step count and heart rate trends over time.
+- **Emergency Contacts:** Manage and notify emergency contacts during SOS events.
+
+---
+
+## **Tech Stack**
+- **Frontend:** React Native, Expo
+- **Backend:** Flask (for API endpoints)
+- **Libraries:**
+  - `react-navigation` for navigation
+  - `react-native-svg-charts` or `victory-native` for data visualization
+  - `pandas`, `numpy`, `matplotlib` for data processing and visualization (Python backend)
+  - `TensorFlow Lite` or `PyTorch Mobile` for lightweight AI models
+
+---
+
+## **Setup Instructions**
+
+### **Prerequisites**
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+- Expo CLI (install globally using `npm install -g expo-cli`)
+- Python (for backend API, if applicable)
+
+---
+
+### **Installation**
+1. Clone the repository:
    ```bash
-   git commit -m "feat: implement basic step counting algorithm using accelerometer data"
+   git clone https://github.com/your-username/Techlerry-git.git
+   cd Techlerry-git/frontend
    ```
 
-2. **Add SOS detection feature**
+2. Install dependencies:
    ```bash
-   git commit -m "feat: add SOS detection logic for emergency alerts"
+   npm install
    ```
 
-3. **Add heart rate monitoring**
+3. Update outdated packages:
    ```bash
-   git commit -m "feat: integrate heart rate anomaly detection"
+   npm update
    ```
 
-4. **Add API endpoints**
+4. Fix compatibility issues with Expo:
    ```bash
-   git commit -m "feat: create Flask API endpoints for step count and SOS status"
+   npx expo install --fix
+   ```
+
+5. Address vulnerabilities:
+   ```bash
+   npm audit fix
    ```
 
 ---
 
-### **Bug Fixes**
-1. **Fix step counting accuracy**
+### **Running the Project**
+1. Start the Expo development server:
    ```bash
-   git commit -m "fix: improve step detection accuracy by filtering noise"
+   npx expo start
    ```
 
-2. **Fix SOS trigger logic**
-   ```bash
-   git commit -m "fix: resolve false SOS triggers in motion detection"
-   ```
-
-3. **Fix API response errors**
-   ```bash
-   git commit -m "fix: correct API error handling for step count endpoint"
-   ```
+expo go install from playstore 
+2. Scan the QR code with the Expo Go app (available on iOS and Android) or use an emulator.
 
 ---
 
-### **Refactoring**
-1. **Refactor step counter code**
-   ```bash
-   git commit -m "refactor: clean up step counter logic for better readability"
-   ```
 
-2. **Refactor SOS detection**
-   ```bash
-   git commit -m "refactor: optimize SOS detection algorithm for performance"
-   ```
+## **Troubleshooting**
 
----
+### **Common Issues**
+1. **Deprecated Packages:**
+   - Update deprecated packages using `npm update` or replace them with recommended alternatives (e.g., `@babel/plugin-transform-nullish-coalescing-operator`).
 
-### **Documentation**
-1. **Update README**
-   ```bash
-   git commit -m "docs: update README with setup instructions and project details"
-   ```
+2. **Expo Compatibility Warnings:**
+   - Run `npx expo install --fix` to update Expo packages to compatible versions.
 
-2. **Add code comments**
-   ```bash
-   git commit -m "docs: add comments to explain step counting logic"
-   ```
+3. **Vulnerabilities:**
+   - Run `npm audit fix` to address security vulnerabilities.
+
+4. **Build Errors:**
+   - Clear the npm cache and reinstall dependencies:
+     ```bash
+     npm cache clean --force
+     rm -rf node_modules package-lock.json
+     npm install
+     ```
 
 ---
 
-### **Dependency Updates**
-1. **Update deprecated packages**
+## **Contributing**
+We welcome contributions! Here’s how you can help:
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:
    ```bash
-   git commit -m "chore: replace deprecated Babel plugins with updated versions"
+   git checkout -b feature/your-feature-name
    ```
-
-2. **Fix Expo compatibility**
+3. Commit your changes:
    ```bash
-   git commit -m "chore: update Expo packages to recommended versions"
+   git commit -m "Add your message here"
    ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request.
 
 ---
 
-### **Testing**
-1. **Add unit tests**
-   ```bash
-   git commit -m "test: add unit tests for step counter and SOS detector"
-   ```
-
-2. **Fix failing tests**
-   ```bash
-   git commit -m "test: resolve failing unit tests for heart rate monitor"
-   ```
+## **License**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-### **UI/UX Improvements**
-1. **Improve Home Screen layout**
-   ```bash
-   git commit -m "style: enhance Home Screen UI with better spacing and typography"
-   ```
-
-2. **Add animations**
-   ```bash
-   git commit -m "feat: add fade-in animations for activity logs"
-   ```
+## **Acknowledgments**
+- Thanks to the Expo team for providing an excellent development platform.
+- Special thanks to our contributors and team members for their hard work.
 
 ---
 
-### **Example Workflow**
-1. Stage your changes:
-   ```bash
-   git add .
-   ```
-
-2. Commit with a descriptive message:
-   ```bash
-   git commit -m "feat: implement basic step counting algorithm using accelerometer data"
-   ```
-
-3. Push to your branch:
-   ```bash
-   git push origin feature/step-counting
-   ```
+## **Contact**
+For questions or support, please contact:
+- madhan - dmadhan692@gmail.com
+-
