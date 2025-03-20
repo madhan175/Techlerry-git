@@ -1,120 +1,121 @@
-Techlerry Project
-Techlerry is a health monitoring and emergency alert system designed to track steps, heart rate, and trigger SOS alerts in case of emergencies. This repository contains the frontend code for the Techlerry app, built with React Native and Expo.
+ **Feature Additions**
+1. **Add step counting logic**
+   ```bash
+   git commit -m "feat: implement basic step counting algorithm using accelerometer data"
+   ```
 
-Features
-Step Counting: Track daily steps using accelerometer data.
+2. **Add SOS detection feature**
+   ```bash
+   git commit -m "feat: add SOS detection logic for emergency alerts"
+   ```
 
-Heart Rate Monitoring: Monitor heart rate and detect anomalies.
+3. **Add heart rate monitoring**
+   ```bash
+   git commit -m "feat: integrate heart rate anomaly detection"
+   ```
 
-SOS Alerts: Trigger emergency alerts manually or automatically based on abnormal heart rate or motion patterns.
+4. **Add API endpoints**
+   ```bash
+   git commit -m "feat: create Flask API endpoints for step count and SOS status"
+   ```
 
-Activity History: View step count and heart rate trends over time.
+---
 
-Emergency Contacts: Manage and notify emergency contacts during SOS events.
+### **Bug Fixes**
+1. **Fix step counting accuracy**
+   ```bash
+   git commit -m "fix: improve step detection accuracy by filtering noise"
+   ```
 
-Tech Stack
-Frontend: React Native, Expo
+2. **Fix SOS trigger logic**
+   ```bash
+   git commit -m "fix: resolve false SOS triggers in motion detection"
+   ```
 
-Backend: Flask (for API endpoints)
+3. **Fix API response errors**
+   ```bash
+   git commit -m "fix: correct API error handling for step count endpoint"
+   ```
 
-Libraries:
+---
 
-react-navigation for navigation
+### **Refactoring**
+1. **Refactor step counter code**
+   ```bash
+   git commit -m "refactor: clean up step counter logic for better readability"
+   ```
 
-react-native-svg-charts or victory-native for data visualization
+2. **Refactor SOS detection**
+   ```bash
+   git commit -m "refactor: optimize SOS detection algorithm for performance"
+   ```
 
-pandas, numpy, matplotlib for data processing and visualization (Python backend)
+---
 
-TensorFlow Lite or PyTorch Mobile for lightweight AI models
+### **Documentation**
+1. **Update README**
+   ```bash
+   git commit -m "docs: update README with setup instructions and project details"
+   ```
 
-Setup Instructions
-Prerequisites
-Node.js (v16 or higher)
+2. **Add code comments**
+   ```bash
+   git commit -m "docs: add comments to explain step counting logic"
+   ```
 
-npm (v8 or higher)
+---
 
-Expo CLI (install globally using npm install -g expo-cli)
+### **Dependency Updates**
+1. **Update deprecated packages**
+   ```bash
+   git commit -m "chore: replace deprecated Babel plugins with updated versions"
+   ```
 
-Python (for backend API, if applicable)
+2. **Fix Expo compatibility**
+   ```bash
+   git commit -m "chore: update Expo packages to recommended versions"
+   ```
 
-Installation
-Clone the repository:
+---
 
-bash
-Copy
-cd Techlerry-git/frontend
-Install dependencies:
+### **Testing**
+1. **Add unit tests**
+   ```bash
+   git commit -m "test: add unit tests for step counter and SOS detector"
+   ```
 
-bash
-Copy
-npm install
-Update outdated packages:
+2. **Fix failing tests**
+   ```bash
+   git commit -m "test: resolve failing unit tests for heart rate monitor"
+   ```
 
-bash
-Copy
-npm update
-Fix compatibility issues with Expo:
+---
 
-bash
-Copy
-npx expo install --fix
-Address vulnerabilities:
+### **UI/UX Improvements**
+1. **Improve Home Screen layout**
+   ```bash
+   git commit -m "style: enhance Home Screen UI with better spacing and typography"
+   ```
 
-bash
-Copy
-npm audit fix
-Running the Project
-Start the Expo development server:
+2. **Add animations**
+   ```bash
+   git commit -m "feat: add fade-in animations for activity logs"
+   ```
 
-bash
-Copy
-npx expo start
+---
 
-expo go install from palyatore 
+### **Example Workflow**
+1. Stage your changes:
+   ```bash
+   git add .
+   ```
 
-Scan the QR code with the Expo Go app (available on iOS and Android) or use an emulator.
-Troubleshooting
-Common Issues
-Deprecated Packages:
+2. Commit with a descriptive message:
+   ```bash
+   git commit -m "feat: implement basic step counting algorithm using accelerometer data"
+   ```
 
-Update deprecated packages using npm update or replace them with recommended alternatives (e.g., @babel/plugin-transform-nullish-coalescing-operator).
-
-Expo Compatibility Warnings:
-
-Run npx expo install --fix to update Expo packages to compatible versions.
-
-Vulnerabilities:
-
-Run npm audit fix to address security vulnerabilities.
-
-Build Errors:
-
-Clear the npm cache and reinstall dependencies:
-
-bash
-Copy
-npm cache clean --force
-rm -rf node_modules package-lock.json
-npm install
-Contributing
-We welcome contributions! Here’s how you can help:
-
-Fork the repository.
-
-Create a new branch for your feature or bugfix:
-
-bash
-Copy
-git checkout -b feature/your-feature-name
-Commit your changes:
-
-bash
-Copy
-git commit -m "Add your message here"
-Push to the branch:
-
-bash
-Copy
-git push origin feature/your-feature-name
-Open a pull request.
-
+3. Push to your branch:
+   ```bash
+   git push origin feature/step-counting
+   ```
